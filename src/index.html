@@ -1,11 +1,33 @@
 <!doctype html>
 <html>
 	<head>
+		<link href="./css/materialize.min.css" rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500|Oranienbaum' rel='stylesheet' type='text/css'>
-		<link href='./lib/main.css' rel='stylesheet' type='text/css'>
+		<link href='./css/main.css' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div class="navbar">
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">#JAMJAM2017</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="index.html">HOME</a></li>
+					<!-- <li><a href="about.html">J + J</a></li>
+					<li><a href="registry.html">REGISTRY</a></li> -->
+				</ul>
+			</div>
+		</nav>
+
+		<div class="home">
+			<div class="title-text">
+				<div><span id="days-left"></span> Days Until</div>
+				<div>OUR WEDDING</div>
+				<div class="smaller">in West Bridgewater, Massachusetts</div>
+			</div>
+			<img class="splash" align="middle" src="./assets/home_page_crop.jpg"></img>
 		</div>
+
+		<script src='./lib/jquery.min.js'></script>
+		<script src='./lib/materialize.min.js'></script>
+		<script src='./js/home.js'></script>
 	</body>
 </html>

@@ -1,0 +1,29 @@
+.home {
+	//@media @phone { text-align: center }
+
+	.splash {
+		width: 100%;
+		position: fixed;
+
+		@media @phone {
+			bottom: 0;
+			width: 185%;
+			margin-left: -42%;
+		}
+	}
+
+	.title-text {
+		z-index: 1;
+		margin-top: 5%;
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		font-size: 40px;
+
+		.smaller {
+			font-size: 30px;
+		}
+
+		@media @phone { margin-top: 10% }
+	}
+}
