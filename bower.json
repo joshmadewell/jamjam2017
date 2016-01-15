@@ -1,0 +1,20 @@
+{
+  "name": "jamjam",
+  "version": "1.0.0",
+  "authors": [
+    "Josh Madewell <josh.madewell@gmail.com>"
+  ],
+  "description": "Wedding website for Josh and Jolene Madewell",
+  "license": "UNLICENSED",
+  "homepage": "www.jamjam2017.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
