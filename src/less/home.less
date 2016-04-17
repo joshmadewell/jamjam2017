@@ -1,36 +1,28 @@
-.row {
-	display: inline-flex;
-}
-
 .tile,
 .tile-home,
 .tile-stories,
+.tile-stories-bottom,
 .tile-gallery,
 .tile-details,
 .tile-travel,
 .tile-rsvp,
 .tile-registry {
+	text-align: center;
+	background-size: cover;
+	background-color: gray;
+	overflow: hidden;
 	color: white;
 	height: 100%;
 	width: 100%;
+	font-family: 'Cedarville Cursive', cursive;
 
-	.content-box {
-		.title {
-			text-align: center;
-		}
-
-		.content {
-			border: 1px: solid black;
-		}
+	.background {
+		width: 100%;
 	}
 }
 
 .tile-home {
-	text-align: center;
-	font-family: 'Cedarville Cursive', cursive;
 	background-image: url('../assets/home2.jpg');
-	background-position: 32%;
-	background-size: cover;
 
 	.content {
 		display: inline-block;
@@ -51,27 +43,45 @@
 }
 
 .tile-stories {
+	height: 50%;
 	background-image: url('../assets/stories.jpg');
-	background-size: cover;
+	background-position: 0 -205px;
+
+	.tile-title {
+		margin-top: 2%;
+		font-size: 115px;
+	}
 }
 
-.tile-gallery {
-	background-image: url('../assets/gallery.jpg');
-	background-size: cover;
+.tile-stories-bottom {
+	height: 50%;
+	background-color: #434343;
+
+	.content {
+		text-align: center;
+		width: 80%;
+		display: inline-flex;
+	}
+
+	.box {
+		width: 30%;
+		margin: auto;
+		border: 4px solid white;
+
+		.box-title {
+			padding: 20px;
+			font-size: 25px;
+		}
+
+		.box-content {
+			font-family: 'Raleway', sans-serif;
+		}
+	}
 }
-.tile-details {
-	background-image: url('../assets/details.jpg');
-	background-size: cover;
-}
-.tile-travel {
-	background-image: url('../assets/travel.jpg');
-	background-size: cover;
-}
-.tile-rsvp {
-	background-image: url('../assets/rsvp.jpg');
-	background-size: cover;
-}
-.tile-registry {
-	background-image: url('../assets/registry.jpg');
-	background-size: cover;
-}
+
+
+.tile-gallery { background-image: url('../assets/gallery.jpg'); }
+.tile-details { background-image: url('../assets/details.jpg'); }
+.tile-travel { background-image: url('../assets/travel.jpg'); }
+.tile-rsvp { background-image: url('../assets/rsvp.jpg'); }
+.tile-registry { background-image: url('../assets/registry.jpg'); }
