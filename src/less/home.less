@@ -1,29 +1,77 @@
-.home {
-	//@media @phone { text-align: center }
+.row {
+	display: inline-flex;
+}
 
-	.splash {
-		width: 100%;
-		position: fixed;
+.tile,
+.tile-home,
+.tile-stories,
+.tile-gallery,
+.tile-details,
+.tile-travel,
+.tile-rsvp,
+.tile-registry {
+	color: white;
+	height: 100%;
+	width: 100%;
 
-		@media @phone {
-			bottom: 0;
-			width: 185%;
-			margin-left: -42%;
-		}
-	}
-
-	.title-text {
-		z-index: 1;
-		margin-top: 5%;
-		position: absolute;
-		width: 100%;
-		text-align: center;
-		font-size: 40px;
-
-		.smaller {
-			font-size: 30px;
+	.content-box {
+		.title {
+			text-align: center;
 		}
 
-		@media @phone { margin-top: 10% }
+		.content {
+			border: 1px: solid black;
+		}
 	}
+}
+
+.tile-home {
+	text-align: center;
+	font-family: 'Cedarville Cursive', cursive;
+	background-image: url('../assets/home2.jpg');
+	background-position: 32%;
+	background-size: cover;
+
+	.content {
+		display: inline-block;
+		margin-top: 18%;
+
+		.title {
+			text-align: center;
+			font-size: 115px;
+		}
+
+		.sub-title {
+			text-align: right;
+			font-family: 'Raleway', sans-serif;
+			padding-top: 5px;
+			font-size: 20px;
+		}
+	}
+}
+
+.tile-stories {
+	background-image: url('../assets/stories.jpg');
+	background-size: cover;
+}
+
+.tile-gallery {
+	background-image: url('../assets/gallery.jpg');
+	background-size: cover;
+}
+.tile-details {
+	background-image: url('../assets/details.jpg');
+	background-size: cover;
+}
+.tile-travel {
+	background-image: url('../assets/travel.jpg');
+	background-size: cover;
+}
+.tile-rsvp {
+	background-image: url('../assets/rsvp.jpg');
+	background-size: cover;
+}
+.tile-registry {
+	background-image: url('../assets/registry.jpg');
+	background-size: cover;
 }
