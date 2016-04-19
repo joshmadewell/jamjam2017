@@ -1,10 +1,8 @@
 .box {
-	width: 30%;
-	margin: auto;
 	border: 4px solid white;
 
 	.box-title {
-		padding: 20px;
+		padding: 20px 20px 15px 20px;
 		font-size: 25px;
 	}
 
@@ -44,10 +42,19 @@
 	.background {
 		width: 100%;
 	}
+
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+		background-position: center center;
+	}
 }
 
 .tile-home {
 	background-image: url('../assets/home2.jpg');
+
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+		background-position: ~"calc(50% + 53px)";
+		background-image: url('../assets/home.jpg');
+	}
 
 	.content {
 		display: inline-block;
@@ -72,6 +79,14 @@
 	background-image: url('../assets/stories.jpg');
 	background-position: 0 -205px;
 
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+		height: ~"calc(80% - 32px)";
+	}
+
+	@media (min-width: 768px) {
+		background-position: 54%;
+	}
+
 	.tile-title {
 		margin-top: 2%;
 		font-size: 115px;
@@ -81,10 +96,23 @@
 .tile-stories-bottom {
 	height: ~"calc(30% - 32px)";
 
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+		height: ~"calc(20% - 32px)";
+	}
+
 	.content {
 		text-align: center;
-		width: 80%;
+		height: 80%;
 		display: inline-flex;
+
+		.box {
+			margin: 15px;
+			height: 90%;
+		}
+	}
+
+	@media (min-width: 768px) {
+		background-position: 54%;
 	}
 }
 
@@ -95,7 +123,13 @@
 .tile-our-story {
 	height: ~"calc(65% - 64px)";
 
-	.timeline {
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+		height: auto;
+		padding: 5%;
+	}
+
+	.timeline-states,
+	.timeline-text {
 		display: inline-flex;
 
 		.state {
@@ -104,8 +138,28 @@
 		}
 	}
 
+	.timeline-states {
+		@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+			display: block;
+			float: left;
+		}
+	}
+
+	.timeline-text {
+		@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+			display: block;
+			float: right;
+			width: 50%;
+		}
+	}
+
 	.tile-title {
 		font-size: 50px;
+
+		@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+			display: inline-flex;
+			margin: 40px 0 0 40px;
+		}
 	}
 
 	.box {
@@ -136,6 +190,10 @@
 	height: ~"calc(45% - 64px)";
 	display: inline-flex;
 
+	@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+		height: ~"calc(20% - 32px)";
+	}
+
 	.box {
 		width: 18%;
 		height: 80%;
@@ -160,6 +218,11 @@
 		.box {
 			width: 80%;
 		}
+
+		@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+			float: none;
+			width: 70%
+		}
 	}
 
 	background-image: url('../assets/travel.jpg');
@@ -176,7 +239,7 @@
 }
 
 .tile-registry {
-	height: ~"calc(70% - 32px)";
+	height: ~"calc(80% - 32px)";
 	background-position: 0 -200px;
 	background-image: url('../assets/registry.jpg');
 
@@ -188,11 +251,10 @@
 
 .tile-registry-bottom {
 	display: inline-flex;
-	height: ~"calc(30% - 32px)";
+	height: ~"calc(20% - 32px)";
 
 	.box {
-		.box-content {
-			padding-bottom: 5%;
-		}
+		margin: 10px auto;
+		width: 30%;
 	}
 }

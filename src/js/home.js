@@ -13,3 +13,6 @@ buttons.forEach(function (name) {
 		}, 'slow');
 	});
 });
+
+
+$(".button-collapse").sideNav();
