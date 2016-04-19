@@ -14,6 +14,14 @@
 			font-size: 24px;
 			font-family: 'Cedarville Cursive', cursive;
 		}
+
+		.ccb {
+			width: 40%;
+
+			@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+				width: 85%;
+			}
+		}
 	}
 }
 
@@ -119,7 +127,19 @@
 
 
 
-.tile-gallery { background-image: url('../assets/gallery.jpg'); }
+.tile-gallery {
+	padding: 15%;
+
+	.tile-title {
+		font-size: 115px;
+	}
+
+	.tile-content {
+		font-size: 24px;
+	}
+
+	background-image: url('../assets/gallery.jpg');
+}
 
 .tile-our-story {
 	height: ~"calc(70% - 64px)";
@@ -254,7 +274,7 @@
 }
 
 .tile-registry {
-	height: ~"calc(85% - 32px)";
+	height: ~"calc(75% - 32px)";
 	background-position: 0 -200px;
 	background-image: url('../assets/registry.jpg');
 
@@ -264,13 +284,14 @@
 	}
 
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+		height: ~"calc(85% - 32px)";
 		background-position: center center;
 	}
 }
 
 .tile-registry-bottom {
 	display: inline-flex;
-	height: ~"calc(15% - 32px)";
+	height: ~"calc(25% - 32px)";
 
 	.box {
 		height: 80%;
@@ -279,6 +300,7 @@
 	}
 
 	@media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 786px) {
+		height: ~"calc(15% - 32px)";
 		background-position: center center;
 	}
 }
