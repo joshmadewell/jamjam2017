@@ -15,4 +15,7 @@ buttons.forEach(function (name) {
 });
 
 
-$(".button-collapse").sideNav();
+$(document).ready(function(){
+	$('.carousel').carousel({ materialboxed: true });
+	$(".button-collapse").sideNav();
+});

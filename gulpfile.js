@@ -13,13 +13,13 @@ gulp.task('clean', function (cb) {
 gulp.task('deps-js', function () {
 	gulp.src([
 		'bower_components/jquery/dist/jquery.min.js',
-		'bower_components/Materialize/dist/js/materialize.min.js',
+		'src/lib/materialize.js'
 	]).pipe(gulp.dest(BUILD_DIR + 'lib'));
 });
 
 gulp.task('deps-css', function () {
 	gulp.src([
-		'bower_components/Materialize/dist/css/materialize.min.css',
+		'src/lib/materialize.css'
 	]).pipe(gulp.dest(BUILD_DIR + 'css'));
 });
 
