@@ -1,3 +1,134 @@
+var currentGalleryIndex = 0;
+var gallery = [
+	'gallery-76.jpg',
+	'gallery-11.jpg',
+	'gallery-159.jpg',
+	'gallery-61.jpg',
+	'gallery-3.jpg',
+	'gallery-8.jpg',
+	'gallery-88.jpg',
+	'gallery-60.jpg',
+	'gallery-20.jpg',
+	'gallery-178.jpg',
+	'gallery-47.jpg',
+	'gallery-36.jpg',
+	'gallery-66.jpg',
+	'gallery-71.jpg',
+	'gallery-25.jpg',
+	'gallery-1.jpg',
+	'gallery-16.jpg',
+	'gallery-132.jpg',
+	'gallery-26.jpg',
+	'gallery-94.jpg',
+	'gallery-80.jpg',
+	'gallery-15.jpg',
+	'gallery-97.jpg',
+	'gallery-78.jpg',
+	'gallery-2.jpg',
+	'gallery-124.jpg',
+	'gallery-64.jpg',
+	'gallery-135.jpg',
+	'gallery-63.jpg',
+	'gallery-9.jpg',
+	'gallery-69.jpg',
+	'gallery-29.jpg',
+	'gallery-179.jpg',
+	'gallery-154.jpg',
+	'gallery-95.jpg',
+	'gallery-87.jpg',
+	'gallery-103.jpg',
+	'gallery-133.jpg',
+	'gallery-38.jpg',
+	'gallery-140.jpg',
+	'gallery-18.jpg',
+	'gallery-21.jpg',
+	'gallery-105.jpg',
+	'gallery-137.jpg',
+	'gallery-177.jpg',
+	'gallery-155.jpg',
+	'gallery-13.jpg',
+	'gallery-73.jpg',
+	'gallery-143.jpg',
+	'gallery-40.jpg',
+	'gallery-129.jpg',
+	'gallery-128.jpg',
+	'gallery-142.jpg',
+	'gallery-34.jpg',
+	'gallery-116.jpg',
+	'gallery-70.jpg',
+	'gallery-77.jpg',
+	'gallery-176.jpg',
+	'gallery-96.jpg',
+	'gallery-58.jpg',
+	'gallery-24.jpg',
+	'gallery-19.jpg',
+	'gallery-130.jpg',
+	'gallery-102.jpg',
+	'gallery-160.jpg',
+	'gallery-158.jpg',
+	'gallery-106.jpg',
+	'gallery-83.jpg',
+	'gallery-12.jpg',
+	'gallery-127.jpg',
+	'gallery-121.jpg',
+	'gallery-72.jpg',
+	'gallery-108.jpg',
+	'gallery-4.jpg',
+	'gallery-45.jpg',
+	'gallery-51.jpg',
+	'gallery-122.jpg',
+	'gallery-68.jpg',
+	'gallery-98.jpg',
+	'gallery-32.jpg',
+	'gallery-31.jpg',
+	'gallery-10.jpg',
+	'gallery-104.jpg',
+	'gallery-125.jpg',
+	'gallery-59.jpg',
+	'gallery-14.jpg',
+	'gallery-23.jpg',
+	'gallery-82.jpg',
+	'gallery-156.jpg',
+	'gallery-28.jpg',
+	'gallery-22.jpg',
+	'gallery-49.jpg',
+	'gallery-139.jpg',
+	'gallery-30.jpg',
+	'gallery-107.jpg',
+	'gallery-134.jpg',
+	'gallery-117.jpg',
+	'gallery-46.jpg',
+	'gallery-50.jpg',
+	'gallery-57.jpg',
+	'gallery-157.jpg',
+	'gallery-123.jpg',
+	'gallery-27.jpg',
+	'gallery-126.jpg',
+	'gallery-33.jpg',
+	'gallery-84.jpg',
+	'gallery-81.jpg',
+	'gallery-79.jpg',
+	'gallery-86.jpg',
+	'gallery-175.jpg',
+	'gallery-131.jpg',
+	'gallery-48.jpg',
+	'gallery-153.jpg',
+	'gallery-35.jpg',
+	'gallery-41.jpg',
+	'gallery-89.jpg',
+	'gallery-75.jpg',
+	'gallery-138.jpg',
+	'gallery-37.jpg',
+	'gallery-74.jpg',
+	'gallery-52.jpg',
+	'gallery-17.jpg',
+	'gallery-67.jpg',
+	'gallery-152.jpg',
+	'gallery-136.jpg',
+	'gallery-42.jpg',
+	'gallery-85.jpg'
+];
+
 $(function() {
 	"use strict";
 	var stickOnScroll;
@@ -73,51 +204,62 @@ $(function() {
 	});
 
 	$(window).resize(function() {
-
 		var w = $(window).width();
 		if ((w > 768) && $(".navigation").is(':hidden')) {
-
 			$(".navigation").removeAttr('style');
-
 		}
 	});
 
 	if ($("#countdown").length) {
-		$("#countdown").countdown({
-			until : new Date(2017, 3-1, 18)
-			//A note on Date - the JavaScript Date constructor expects the year, month, and day as parameters. However,
-			//the month ranges from 0 to 11. To make explicit what date is intended (does a month of 3 mean March or April?)
-			//I specify the month from 1 to 12 and manually subtract the 1. Thus the following denotes 25 December, 2014.
-			//http://keith-wood.name/countdown.html
-			//http://keith-wood.name/countdownRef.html
-		});
+		var weddingTime = new Date(2017, 2, 18, 16);
 
+		var offset = 4;
+		var localOffset = weddingTime.getTimezoneOffset() / 60;
+
+		weddingTime.setHours(weddingTime.getHours() + (offset - localOffset));
+
+		$("#countdown").countdown({
+			until : weddingTime
+		});
 	}
 
 	// Filltering
-		$(window).load(function(){
+	$(window).load(function(){
 		if ($('.gallery-part .gallery-img-sec').length) {
+			var $container = $('.gallery-img-sec').isotope({
+				itemSelector : '.main-item',
+				layoutMode : 'fitRows'
+			})
 
-		var $container = $('.gallery-img-sec').isotope({
-			itemSelector : '.main-item',
-			layoutMode : 'fitRows'
-		})
+			$('.gallery-part .tabbing-wrapper button').on('click', function() {
+				var filterValue = "." + $(this).attr('data-filter');
 
-		$('.gallery-part .tabbing-wrapper button').on('click', function() {
+				$container.isotope({
+					filter : filterValue
+				});
 
-			var filterValue = "." + $(this).attr('data-filter');
-			$container.isotope({
-				filter : filterValue
+				var fancybox = $(this).attr('data-filter');
+
+				$(filterValue).find('a').attr({
+					'data-fancybox-group' : fancybox
+				});
 			});
-			var fancybox = $(this).attr('data-filter');
-			$(filterValue).find('a').attr({
-				'data-fancybox-group' : fancybox
-			});
-
-		});
-	}
+		}
 	});
 
+	$('#load-more-gallery').click(function () {
+		var images = '';
+		for (var x = 0; x < 4; x++, currentGalleryIndex++) {
+			var imageSrc = 'assets/images/gallery/' + gallery[currentGalleryIndex];
+			images += '' +
+			'<li class="main-item all engage">' +
+				'<a  class="fancybox-button" data-fancybox-group="fancybox-button" href="' + imageSrc + '" title=""> <img alt="" src="' + imageSrc + '"></a>' +
+			'</li>';
+		}
+
+		var $images = $(images);
+		$('.gallery-part .gallery-blog .gallery-img-sec').append($images).isotope('insert', $images);
+	});
 
 	if ($('.fancybox-button').length) {
 		$(".fancybox-button").fancybox({
@@ -131,39 +273,6 @@ $(function() {
 				buttons : {}
 			}
 		});
-	}
-
-	$('.control').on('click', function() {
-		$(this).remove();
-		var video = '<iframe src="' + $('.video img').attr('data-video') + '"></iframe>'
-		$('.video img').after(video);
-		return false;
-	});
-
-	if ($('.project').length) {
-		$('.project').appear(function() {
-			$('.project').countTo({
-				from : 0,
-				to : 178
-			});
-
-			$('.award').countTo({
-				from : 0,
-				to : 16
-			});
-
-			$('.montre').countTo({
-				from : 0,
-				to : 178
-			});
-
-			$('.hours').countTo({
-				from : 0,
-				to : 2600
-			});
-
-		});
-
 	}
 
 	//Custom Map
@@ -193,20 +302,16 @@ $(function() {
 			map : map,
 			draggable : false,
 			// icon : 'assets/images/map-icon-2.png'
-
 		});
 		var marker3 = new google.maps.Marker({
 			position : pos3,
 			map : map,
 			draggable : false,
 			// icon : 'assets/images/map-icon-2.png'
-
 		});
-
 	}
 
 	if ($('#map').length) {
-
 		var pos = new google.maps.LatLng(42.016137, -71.010856);
 
 		var map = new google.maps.Map(document.getElementById('map'), {
@@ -226,7 +331,6 @@ $(function() {
 			draggable : false,
 			// icon : 'assets/images/locater-img.png'
 		});
-
 	}
 
 	$(window).load(function() {
@@ -237,6 +341,7 @@ $(function() {
 	if ($('#header').hasClass('fixed')) {
 		$('#header').next().addClass('top-m');
 	}
+
 	if ($('#header').hasClass('intelligent')) {
 		$('#header').next().addClass('top-m');
 	};
@@ -244,10 +349,9 @@ $(function() {
 	var class_pr = $('body').attr('class');
 	var headerHeight = $('#header').outerHeight();
 	var st = $(window).scrollTop();
+
 	stickOnScroll = function() {
-
 		if ($('#header').hasClass("intelligent")) {
-
 			$('#header').removeClass('normal');
 			$('#header').next().addClass('top-m');
 			var pos = $(window).scrollTop();
@@ -264,17 +368,15 @@ $(function() {
 
 				}
 				st = pos;
-
 			} else {
 				$('#header.simple').removeClass('fixed down up simple');
 			}
+
 			if (pos == $(document).height() - $(window).height()) {
 				$('#header.simple').removeClass('up');
 				$('#header.simple').addClass('fixed down');
 			}
-
 		} else if ($('body').hasClass("fix")) {
-
 			$('#header').next().addClass('top-m');
 			$('#header').addClass('simple fixed');
 			$('#header').removeClass('down up');
@@ -282,7 +384,6 @@ $(function() {
 				paddingTop : 0
 			});
 		} else {
-
 			$('#header.simple').removeClass('fixed down up simple');
 			$('#header').addClass('normal');
 
@@ -291,12 +392,10 @@ $(function() {
 			});
 		}
 	};
+
 	stickOnScroll();
+
 	$(window).scroll(function() {
 		stickOnScroll();
 	});
-
-	// end for sticky header
-
-
-	});
+});

@@ -318,11 +318,11 @@ img {
  2.0.6) Link style
  -------------------------*/
 a {
-	color: #774f38;
+	color: #e08e79;
 	text-decoration: none;
 }
 a:hover, a:focus {
-	color: #fff;
+	color: #ce5030;
 	text-decoration: none;
 	outline: none;
 }
@@ -363,6 +363,9 @@ tbody th {
 tbody td {
 	text-align: left;
 	border-top: 1px solid #ccc;
+}
+.accent {
+	color: #e08e79;
 }
 /*
  2.0.8) Button Styles

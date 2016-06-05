@@ -111,9 +111,10 @@
 	position: absolute;
 	display: inline-block;
 	right: -8.5%;
-    top: 12.3%;
+    top: 11.6%;
 	border: 5px solid #e5e5e5;
 	border-radius:50%;
+	background: #e08e79;
 }
 .bell:before{
 	content: "\f004";
@@ -124,7 +125,7 @@
     margin: 0 auto;
     position: absolute;
     right: 0;
-    top: 15.3%;
+    top: 16.6%;
     z-index: 999;
 }
 .jack {
@@ -276,6 +277,7 @@
 	padding-top: 11px;
 	text-align: center;
 	display: inline-block;
+	background: #e08e79;
 }
 .time-line-divider:after {
 	font-size: 16px;
@@ -340,6 +342,7 @@
 	padding-top: 11px;
 	text-align: center;
 	display: inline-block;
+	background: #e08e79;
 }
 .met-section-right:after {
 	font-size: 16px;
@@ -490,7 +493,7 @@
 }
 .event-description-wrapper:before {
 	border-radius: 50px;
-	color: #E08E79;
+	color: #ffffff;
 	content: "";
 	display: inline-block;
 	font-family: FontAwesome;
@@ -502,7 +505,8 @@
 	text-align: center;
 	top: 41%;
 	width: 84px;
-	border: 4px solid #E08E79;
+	border: 4px solid #e5e5e5;
+	background: #E08E79;
 }
 .padding-right figure {
 	padding-left: 0px;
