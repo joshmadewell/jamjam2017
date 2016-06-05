@@ -228,7 +228,7 @@ $(function() {
 		if ($('.gallery-part .gallery-img-sec').length) {
 			var $container = $('.gallery-img-sec').isotope({
 				itemSelector : '.main-item',
-				layoutMode : 'fitRows'
+				masonry: {}
 			})
 
 			$('.gallery-part .tabbing-wrapper button').on('click', function() {
@@ -248,17 +248,17 @@ $(function() {
 	});
 
 	$('#load-more-gallery').click(function () {
-		var images = '';
+		var elements = [];
 		for (var x = 0; x < 4; x++, currentGalleryIndex++) {
 			var imageSrc = 'assets/images/gallery/' + gallery[currentGalleryIndex];
-			images += '' +
-			'<li class="main-item all engage">' +
-				'<a  class="fancybox-button" data-fancybox-group="fancybox-button" href="' + imageSrc + '" title=""> <img alt="" src="' + imageSrc + '"></a>' +
-			'</li>';
+			var $element =  $('<li class="main-item all engage">');
+			$element.append('<a  class="fancybox-button" data-fancybox-group="fancybox-button" href="' + imageSrc + '" title=""> <img alt="" src="' + imageSrc + '"></a>')
+			elements.push($element[0]);
 		}
 
-		var $images = $(images);
-		$('.gallery-part .gallery-blog .gallery-img-sec').append($images).isotope('insert', $images);
+		$('#offscreen-image-loader').append(elements).imagesLoaded().progress(function () {
+			$('.gallery-img-sec').isotope('insert', elements).isotope('layoutItems', elements, function () {});
+		});
 	});
 
 	if ($('.fancybox-button').length) {
