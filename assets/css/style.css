@@ -430,6 +430,9 @@
 	margin-bottom: 95px;
 	text-transform: none;
 }
+.met-section ul {
+	display: inline-flex;
+}
 .event-description h3{
 	position: relative;
 }
@@ -564,7 +567,7 @@
 .img-section {
 	padding-top: 110px;
 	background: #c5e0dc;
-	padding-bottom: 190px;
+	padding-bottom: 100px;
 }
 .owl-prev, .owl-next {
 	font-size: 0px;
@@ -732,7 +735,7 @@
 .overlay > span {
 	text-transform: capitalize;
 	text-align: center;
-	font-size: 24px;
+	font-size: 21px;
 	color: #774f38;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 500;
