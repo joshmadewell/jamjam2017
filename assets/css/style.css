@@ -21,7 +21,7 @@
 .banner-content-wrapper {
 	width: 776px;
 	margin: 0px auto;
-	background: rgba(236,231,210,0.7);
+	background: rgba(255,255,255,0.7);
 	text-align: center;
 	padding: 45px 20px 55px;
 	position: absolute;
@@ -111,7 +111,7 @@
 	position: absolute;
 	display: inline-block;
 	right: -8.5%;
-    top: 11.6%;
+    top: 13.1%;
 	border: 5px solid #e5e5e5;
 	border-radius:50%;
 	background: #e08e79;
@@ -231,7 +231,7 @@
 }
 .our-story {
 	background-color: #C6E0DD;
-	padding: 145px 20px 112px;
+	padding: 98px 20px 112px;
 	text-align: center;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -852,7 +852,7 @@
 	background: rgba(0,0,0,0.8);
 }
 .attending-class {
-	background: url('../images/email-background.jpg') no-repeat top right;
+	background: url('../images/gallery/gallery-153.jpg') no-repeat top right;
 	-webkit-background-size: cover;
 	background-size: cover;
 	height: auto;
@@ -2497,7 +2497,7 @@ form placeholder {
 }
 /*======Loader Styling ========*/
 #loading{
-	background-color: #e08e79;
+	background-color: #C6E0DD;
 	height: 100%;
 	width: 100%;
 	position: fixed;
