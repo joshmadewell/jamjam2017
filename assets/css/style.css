@@ -74,7 +74,6 @@
 }
 .header-center {
 	text-align: center;
-	background: url('../images/divider-img.png') no-repeat bottom center;
 	padding-top: 12px;
 	padding-bottom: 18px;
 	margin-bottom: 66px;
@@ -93,7 +92,6 @@
 .header-center-content h2:after {
 	content: "";
 	position: absolute;
-	background: url('../images/divider-img.png') no-repeat bottom center;
 	width: 400px;
 	height: 70px;
 	bottom: 0px;
@@ -114,7 +112,7 @@
     top: 13.1%;
 	border: 5px solid #e5e5e5;
 	border-radius:50%;
-	background: #e08e79;
+	background: #782F40;
 }
 .bell:before{
 	content: "\f004";
@@ -155,7 +153,7 @@
 	font-size: 30px;
 	font-family: 'Roboto Slab', serif;
 	line-height: 1.3;
-	color: #e08e79;
+	color: #782F40;
 	text-transform: capitalize;
 	font-weight: 300;
 	padding-top: 60px;
@@ -230,7 +228,7 @@
 	letter-spacing: 1.2px;
 }
 .our-story {
-	background-color: #C6E0DD;
+	background-color: #CEB888;
 	padding: 98px 20px 112px;
 	text-align: center;
 	-webkit-background-size: cover;
@@ -281,7 +279,7 @@
 	padding-top: 11px;
 	text-align: center;
 	display: inline-block;
-	background: #e08e79;
+	background: #782F40;
 }
 .time-line-divider:after {
 	font-size: 16px;
@@ -290,7 +288,7 @@
 	position: absolute;
 	right: -16px;
 	bottom: -4px;
-	background: #e08e79;
+	background: #782F40;
 	color: #fff;
 	width: 36px;
 	height: 36px;
@@ -346,7 +344,7 @@
 	padding-top: 11px;
 	text-align: center;
 	display: inline-block;
-	background: #e08e79;
+	background: #782F40;
 }
 .met-section-right:after {
 	font-size: 16px;
@@ -355,7 +353,7 @@
 	position: absolute;
 	left: -68px;
 	top: 93px;
-	background: #e08e79;
+	background: #782F40;
 	color: #fff;
 	width: 36px;
 	height: 36px;
@@ -365,7 +363,7 @@
 	display: inline-block;
 }
 .arrow-cls {
-	background: #c5e0dc;
+	background: #CEB888;
 	padding: 8px 15px;
 	display: inline-block;
 	color: #555555;
@@ -375,7 +373,6 @@
 }
 .arrow-cls:before {
 	content: "";
-	background: url('../images/arrow.png') no-repeat top center;
 	width: 400px;
 	height: 35px;
 	position: absolute;
@@ -414,7 +411,7 @@
 	width: 0;
 	height: 0;
 	border-top: 17px solid transparent;
-	border-right: 15px solid #c5e0dc;
+	border-right: 15px solid #CEB888;
 	border-bottom: 17px solid transparent;
 	left: -29px;
 	top: -7px;
@@ -425,7 +422,7 @@
 	position: absolute;
 	height: 0;
 	border-top: 17px solid transparent;
-	border-left: 15px solid #c5e0dc;
+	border-left: 15px solid #CEB888;
 	border-bottom: 17px solid transparent;
 	right: -29px;
 	top: -7px;
@@ -447,7 +444,7 @@
 .read-more {
 	font-size: 14px;
 	display: inline-block;
-	border: 1px solid #e08e79;
+	border: 1px solid #782F40;
 	padding: 17px 23px;
 	text-transform: uppercase;
 	font-family: 'roboto';
@@ -492,7 +489,7 @@
 	width: 556px;
 	min-height: 565px;
 	margin-top: 142px;
-	border: 2px solid #c5e0dc;
+	border: 2px solid #CEB888;
 	background-color: #fff;
 	position: relative;
 	margin-bottom: 71px;
@@ -513,7 +510,7 @@
 	top: 41%;
 	width: 84px;
 	border: 4px solid #e5e5e5;
-	background: #E08E79;
+	background: #782F40;
 }
 .padding-right figure {
 	padding-left: 0px;
@@ -570,7 +567,7 @@
 }
 .img-section {
 	padding-top: 110px;
-	background: #c5e0dc;
+	background: #CEB888;
 	padding-bottom: 100px;
 }
 .owl-prev, .owl-next {
@@ -777,7 +774,7 @@
 	text-align: center;
 }
 .gift-class {
-	border: 2px solid #f3d9b8;
+	border: 2px solid #CEB888;
 	text-align: center;
 	background: #fff;
 	padding: 35px 0 36px;
@@ -816,8 +813,8 @@
 }
 .btn, input.btn, button.btn {
 	background: none;
-	border: 1px solid #e08e79;
-	color: #e08e79;
+	border: 1px solid #782F40;
+	color: #782F40;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 14px;
@@ -870,7 +867,7 @@
 	color: white;
 }
 .rsvp-wrapper {
-	background-color: #c5e0dc;
+	background-color: #CEB888;
 	padding: 65px 31px 71px;
 }
 .wedding-gift {
@@ -936,7 +933,7 @@
 .inner-wrapper .input-box  input {
 	width: 100%;
 	border: 2px solid #ffffff;
-	background: transparent; /*#e08e79;*/
+	background: transparent; /*#782F40;*/
 	color: #fff;
 	text-align: left;
 	font-family: roboto;
@@ -967,7 +964,7 @@
 	padding: 3px 12px 0 12px;
 	height: 92px;
 	margin-bottom: 47px;
-	background-color: #c5e0dc;
+	background-color: #CEB888;
 }
 .inner-wrapper #mail {
 	padding: 13px 15px;
@@ -1084,7 +1081,7 @@ form placeholder {
 .home-agency .what-we-do .event-img a {
 	width: 97px;
 	height: 98px;
-	background: #c5e0dc;
+	background: #CEB888;
 	border-radius: 50%;
 	position: absolute;
 	left: 0;
@@ -1125,7 +1122,7 @@ form placeholder {
 	margin: 0 auto;
 }
 .highlight {
-	color: #c5e0dc;
+	color: #CEB888;
 }
 .home-agency .services {
 	background: url(../images/agency-bg1.jpg) center 0 no-repeat;
@@ -1192,7 +1189,7 @@ form placeholder {
 	padding-bottom: 86px;
 }
 .home-agency .services .circle:hover span{
-	color: #c5e0dc;
+	color: #CEB888;
 }
 .home-agency .how-we-do {
 	padding: 117px 0 0 0;
@@ -1222,7 +1219,7 @@ form placeholder {
 .home-agency .how-we-do .event a {
 	width: 97px;
 	height: 98px;
-	background: #c5e0dc;
+	background: #CEB888;
 	border-radius: 50%;
 	position: absolute;
 	left: 37%;
@@ -1272,7 +1269,7 @@ form placeholder {
 }
 .home-agency .how-we-do .event strong {
 	font-size: 30px;
-	color: #e08e79;
+	color: #782F40;
 	display: block;
 	font-family: 'Roboto Slab', serif;
 	position: relative;
@@ -1303,8 +1300,8 @@ form placeholder {
 }
 .btn, input.btn, button.btn {
 	background: none;
-	border: 1px solid #e08e79;
-	color: #e08e79;
+	border: 1px solid #782F40;
+	color: #782F40;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 14px;
@@ -1525,7 +1522,7 @@ form placeholder {
 	font-weight: 300;
 }
 .home-agency .status ul li:nth-child(odd) {
-	background: #c5e0dc;
+	background: #CEB888;
 }
 .home-agency .status ul li:nth-child(even) {
 	background: #d6e9e6;
@@ -1574,7 +1571,7 @@ form placeholder {
 }
 .home-agency .wedding-plan {
 	padding: 52px 0 66px;
-	background: #c5e0dc;
+	background: #CEB888;
 	text-align: center;
 }
 .home-agency .wedding-plan span {
@@ -1605,7 +1602,7 @@ form placeholder {
 }
 .home-agency .sec-block a {
 	font-size: 16px;
-	color: #e08e79;
+	color: #782F40;
 	margin-right: 5px;
 	text-transform: capitalize;
 }
@@ -1776,7 +1773,7 @@ form placeholder {
 	content: "";
 	position: absolute;
 	font-size: 19px;
-	color: #e08e79;
+	color: #782F40;
 	font-family: 'FontAwesome';
 	left: 11px;
 	top: 18px;
@@ -1840,7 +1837,7 @@ form placeholder {
 	font-weight: 400;
 }
 .categories-wrapper .info-wrap h2:after, .blog-single-quotes .media  .info-wrap h2:after {
-	background: #c5e0dc;
+	background: #CEB888;
 	bottom: 0;
 	content: "";
 	height: 2px;
@@ -1916,9 +1913,9 @@ form placeholder {
 }
 .next-prev-class .pagination > li > a {
 	margin-right: 10px;
-	border: 1px solid #e08e79;
+	border: 1px solid #782F40;
 	border-radius: 0px;
-	color: #e08e79;
+	color: #782F40;
 	font-size: 16px;
 	font-family: "Roboto", serif;
 }
@@ -1927,7 +1924,7 @@ form placeholder {
 }
 .pagination > li > span {
 	font-size: 16px;
-	color: #e08e79;
+	color: #782F40;
 	border: 0px;
 	border-radius: 0px;
 }
@@ -1936,7 +1933,7 @@ form placeholder {
 .blog-detail-page .quotes {
 	background: #f9f9f4;
 	padding: 30px 35px 37px;
-	border-left: 2px solid #e08e79;
+	border-left: 2px solid #782F40;
 	margin-bottom: 40px;
 	margin-left: 35px;
 }
@@ -1951,7 +1948,7 @@ form placeholder {
 .blog-single-quotes .author {
 	font-size: 20px;
 	font-family: "Roboto", serif;
-	color: #e08e79;
+	color: #782F40;
 }
 .blog-single-quotes .share-block {
 	float: left;
@@ -1960,7 +1957,7 @@ form placeholder {
 .share-block > li {
 	float: left;
 	font-size: 16px;
-	color: #e08e79;
+	color: #782F40;
 }
 .share-block > li:first-child {
 	margin-right: 16px;
@@ -1968,7 +1965,7 @@ form placeholder {
 	text-transform: uppercase;
 }
 .blog-detail-page .blog-single-quotes .share-block a {
-	border: 1px solid #e08e79;
+	border: 1px solid #782F40;
 	border-radius: 50%;
 	display: inline-block;
 	height: 40px;
@@ -1983,7 +1980,7 @@ form placeholder {
 	content: "";
 	position: absolute;
 	font-size: 22px;
-	color: #e08e79;
+	color: #782F40;
 	height: 40px;
 	width: 40px;
 	left: -16px;
@@ -1994,7 +1991,7 @@ form placeholder {
 	content: "";
 	position: absolute;
 	font-size: 22px;
-	color: #e08e79;
+	color: #782F40;
 	height: 40px;
 	width: 40px;
 	font-family: 'FontAwesome';
@@ -2002,7 +1999,7 @@ form placeholder {
 	top: 13px;
 }
 .blog-detail-page .blog-single-quotes .share-block a i {
-	color: #e08e79;
+	color: #782F40;
 	font-size: 19.2px;
 	left: 50%;
 	position: relative;
@@ -2051,7 +2048,7 @@ form placeholder {
 	height: 18px;
 	right: -1px;
 	top: 17px;
-	background: #e08e79;
+	background: #782F40;
 	position: absolute;
 }
 .blog-single-quotes .media {
@@ -2092,7 +2089,7 @@ form placeholder {
 }
 .blog-single-quotes .media  .rply-class {
 	float: right;
-	color: #e08e79;
+	color: #782F40;
 	font-size: 16px;
 	text-transform: uppercase;
 }
@@ -2150,7 +2147,7 @@ form placeholder {
 	border-color: #f2d7b4;
 }
 .blog-from form button {
-	color: #e08e79;
+	color: #782F40;
 	border-width: 1px;
 }
 .blog-single-quotes {
@@ -2281,7 +2278,7 @@ form placeholder {
 	padding-top: 10px;
 }
 .left-inner-header h4:before {
-	background: #c5e0dc;
+	background: #CEB888;
 	bottom: -7px;
 	content: "";
 	height: 2px;
@@ -2307,7 +2304,7 @@ form placeholder {
 	width: 30px;
 	height: 30px;
 	font-family: FontAwesome;
-	color: #c5e0dc;
+	color: #CEB888;
 }
 .bg-color {
 	background: #f9f9f4;
@@ -2359,7 +2356,7 @@ form placeholder {
 	background: #f9f9f4;
 }
 .error-header h1 {
-	color: #c5e0dc;
+	color: #CEB888;
 	font-size: 144px;
 	font-family: "Roboto Slab", serif;
 	font-weight: 700;
@@ -2370,7 +2367,7 @@ form placeholder {
 }
 .sorry-cls {
 	display: block;
-	color: #e08e79;
+	color: #782F40;
 	float: none;
 	font-family: "Roboto", serif;
 	text-transform: uppercase;
@@ -2411,8 +2408,8 @@ form placeholder {
 	font-size: 16px;
 	line-height: 1.4;
 	padding: 10px 20px;
-	border: 1px solid #e08e79;
-	color: #e08e79;
+	border: 1px solid #782F40;
+	color: #782F40;
 	display: block;
 	margin-bottom: 24px;
 	position: relative;
@@ -2425,14 +2422,14 @@ form placeholder {
 	right: 38px;
 	top: 0px;
 	position: absolute;
-	color: #e08e79;
-	background: #e08e79;
+	color: #782F40;
+	background: #782F40;
 }
 .left-inner-header .park-class:before {
 	content: "";
 	font-family: FontAwesome;
 	font-size: 24px;
-	color: #e08e79;
+	color: #782F40;
 	right: 14px;
 	top: 4px;
 	position: absolute;
@@ -2504,7 +2501,7 @@ form placeholder {
 }
 /*======Loader Styling ========*/
 #loading{
-	background-color: #C6E0DD;
+	background-color: #CEB888;
 	height: 100%;
 	width: 100%;
 	position: fixed;

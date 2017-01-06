@@ -97,7 +97,7 @@ h2 {
 }
 h3 {
 	font-size: 30px;
-	color: #e08e79;
+	color: #782F40;
 	font-family: "Roboto Slab", serif;
 	font-weight: 300;
 	margin-bottom: 30px;
@@ -120,7 +120,7 @@ button, input, optgroup, select, textarea {
 	font-size: 16px;
 	line-height: 31px;
 	color: #fff;
-	background: #e08e79;
+	background: #782F40;
 	border: 2px solid #fff;
 	font-family: 'Roboto Slab', serif;
 	-webkit-appearance: none;
@@ -153,7 +153,7 @@ input[type="text"] {
 	color: #fff;
 	font-size: 16px;
 	font-weight: 300;
-	background: #e08e79;
+	background: #782F40;
 }
 textarea {
 	font-size: 16px;
@@ -161,7 +161,7 @@ textarea {
 	text-transform: capitalize;
 	padding: 16px 0 0 12px;
 	margin-top: 0px;
-	background: #e08e79;
+	background: #782F40;
 	font-weight: 400;
 	border: 2px solid #ece5ce;
 	margin-bottom: 30px;
@@ -318,7 +318,7 @@ img {
  2.0.6) Link style
  -------------------------*/
 a {
-	color: #e08e79;
+	color: #782F40;
 	text-decoration: none;
 }
 a:hover, a:focus {
@@ -365,7 +365,7 @@ tbody td {
 	border-top: 1px solid #ccc;
 }
 .accent {
-	color: #e08e79;
+	color: #782F40;
 }
 /*
  2.0.8) Button Styles
@@ -648,7 +648,7 @@ nav .icon-bar {
 	float: right;
 }
 .psd-temp-class .fa-heart {
-	color: #e08e79;
+	color: #782F40;
 	font-size: 16px;
 }
 .macro-class {
@@ -685,7 +685,7 @@ nav .icon-bar {
 }
 .home-agency .sec-block h5 {
 	font-size: 16px;
-	color: #e08e79;
+	color: #782F40;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	padding-bottom: 10px;
@@ -711,7 +711,7 @@ nav .icon-bar {
 	background: #323232;
 }
 .home-agency .right-footer .circle-class:hover {
-	background: #e08e79;
+	background: #782F40;
 	-webkit-transition: ease 0.5s;
 	-moz-transition: ease 0.5s;
 	-ms-transition: ease 0.5s;
