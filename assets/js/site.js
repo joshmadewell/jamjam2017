@@ -170,7 +170,10 @@ $(function() {
 
 		weddingTime.setHours(weddingTime.getHours() + (offset - localOffset));
 
-		$("#countdown").countdown({
+		weddingTime.setMinutes(30);
+		
+				
+$("#countdown").countdown({
 			until : weddingTime
 		});
 	}
